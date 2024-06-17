@@ -1,9 +1,109 @@
+Updates to keyboard shortcuts … On Thursday, August 1, 2024, Drive keyboard
+shortcuts will be updated to give you first-letters navigation.Learn more
+day2.html
+<!-- display property, anchor tags, flex, external styling -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 4</title>
+    <title>Document</title>
+    <style>
+      a {
+        display: block;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+      }
+
+      .outer-box {
+        /* background-color: yellow; */
+        display: flex;
+        /* flex will represent the elements in a row format */
+        /* justify-content: space-between; */
+      }
+      #box1 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(138, 138, 241);
+        margin: 1px;
+      }
+      #box2 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(243, 153, 153);
+        margin: 1px;
+      }
+
+      #hoverh1 {
+        background-color: red;
+        width: 15rem;
+      }
+
+      #hoverh1:hover {
+        /* pseudo classes: provide styles for a particular state */
+        padding: 15rem;
+        transition: 3s ease-in-out;
+      }
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        width: 50%;
+        text-align: center;
+        border-collapse: collapse;
+      }
+      tr:nth-child(even) {
+        background-color: green;
+      }
+      tr:nth-child(odd) {
+        background-color: blue;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>My webpage</h1>
+    <!-- connect my page with an external website -->
+    <!-- anchor tag - used to link external webpages to my webpage -->
+    <!-- href attribute : hyperlink reference -->
+    <a href="https://en.wikipedia.org/wiki/Western_Ghats" target="_blank"
+      >Learn about western ghats</a
+    >
+    <a href="../day1/FirstwebPage.html" target="_blank"
+      >Visit my fist webpage</a
+    >
+    <div class="outer-box">
+      <div id="box1">Blue Box 1</div>
+      <div id="box2">Red Box 2</div>
+    </div>
+    <div>
+      <h1 id="hoverh1">Hover me</h1>
+    </div>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>ID</th>
+      </tr>
+      <tr>
+        <td>Amith</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Amith</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Amith</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Amith</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Amith</td>
+        <td>20</td>
+      </tr>
+    </table>
+  </body>
 </html>
